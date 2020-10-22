@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!--DOCTYPE’ın açılımı Document Type’dır yani Türkçe söyleyecek olursak Belge Tipi anlamına gelmektedir. Sayfa başında DOCTYPE kullanarak tarayıcıya o sayfanın hangi tipte bir belge olduğunu söylemiş oluyoruz -->
+<html lang="tr" dir="ltr"> 
+<!-- html etiketi web sitemizin tüm kodlarını kapsayan etikettir.Yani tarayıcılara “ben html ile yazıldım” ve “benim uzantım .html” diye haber verir.-->
+  <head> <!--head etiketi, web sitemizin baş kısımını oluşturan etikettir. Bu kısıma web sitemizin özelliklerini, içeriğini, web sitesinin yazarını, web sitesinin hangi konu ile alakalı olduğunu belirten kodlamalar gelir.-->
+<title>Damla Başak Koçak</title>
+<!--title etiketi sitemizin başlığını belirler. title etiketleri arasına yazacağımız başlık sitemizin içeriği ile alakalı olması web sitemizin tanımlanması açımızdan daha iyi olacaktır.-->
+<meta charset="UTF-8"> <!--meta etiketleri, oluşturmuş olduğumuz html sayfanın tanımlarını yapmamıza ve anahtar kelimeler(keywords) ile sayfamızı tanımlamamıza olanak sağlar-->
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+
+</head>
+<body> <!--body etiketi web sitemizin geri kalan tüm içeriğini kapsayacak olan etikettir yani Gövde diye tabir ettiğimiz kısımdır. Sitemizin tüm içeriği body etiketleri arasına yazılır.-->
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+      <img src="images/demo/Ekran Görüntüsü (85).png" alt="logo">
+      
+    </div>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Search:</legend>
+        <input type="text" value="ara&hellip;" onFocus="this.value=(this.value=='ara&hellip;')? '' : this.value ;">
+        <input type="submit" id="sf_submit" value="ara">
+      </fieldset>
+    </form>
+    <nav>
+      <ul>
+        <li><a href="index.html"> <b> Anasayfa</b></a></li> <!--Verdiğimiz linkin yeni bir sayfada açılmasını istiyorsak "target" etiketini kullanırız-->
+        <li><a href="hakkımda.html"> <b> Hakkımda</b></a></li>
+        <li><a href="iletişim.html"> <b>İletişim</b></a></li> <!--strong ve b etiketleri kapsadığı karakterlerin kalın görünmesi sağlayan etiketlerdir. İkiside aynı görevi görür.-->
+        <!--a etiketi link oluşturmamızı sağlayan etikettir. Web sitemize ait sayfalar ya da diğer sayfalar arası geçiş yapmak için a etiketi kullanılır.-->
+      </ul>
+      <!--  <ul></ul>, <ol></ol> ve <li></li>
+Bu etiketler liste etiketleridir. Web sitenizde listelendirmek istediğimiz ögeleri bu etiketler arasında belirtiriz.-->
+      
+    </nav>
+  </header>
+</div>
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <!-- Slider -->
+    <section id="slider" class="clear">
+      <figure><img src="images/demo/foto.jpg" alt="">
+        <figcaption><img src="images/demo/sol.jpg">
+         <!--img etiketi web sitemize resim eklemek için kullandığımız etikettir.-->
+        </figcaption>
+      </figure>
+    </section>
+    
+<!-- Footer -->
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Copyright &copy; 2020 - <i> Tüm Hakları Saklıdır</i> - <!--em ve i etiketleri kapsadığı karakterlerin italik(eğik) şekilde görünmesini sağlayan etiketlerdir.-->
+      <!--p etiketi paragrafları tanımlamak için kullanılır. Bir metin yazacağınız zaman bu etiket arasına yazılmalıdır.-->
+    
+  </footer>
+</div>
+</body>
+</html>
